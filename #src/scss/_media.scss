@@ -26,6 +26,12 @@
             margin-left: 20px;
         }
     }
+    .catalog {
+        &__card {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .top-header {
@@ -99,6 +105,11 @@
             }
         }
     }
+    .catalog {
+        &__cards {
+            justify-content: inherit;
+        }
+    }
 }
 @media (max-width: 768px) {
     .top-header {
@@ -139,11 +150,34 @@
             }
         }
     }
+    .catalog {
+        &__tabs {
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+        &__cards {
+            justify-content: center;
+        }
+        &__title .title {
+            font-size: 28px;
+            &:after {
+                bottom: 7px;
+            }
+        }
+        &__link {
+            padding: 8px 20px;
+        }
+        .card {
+            &__btn {
+                background: url("../img/catalog/card_cart.png") 97px 50% no-repeat,
+                    linear-gradient(180deg, #6d6aff 0, #504cff 100%);
+            }
+        }
+    }
 }
 @media (max-width: 576px) {
     .container {
         width: 100%;
-        padding: 10px;
     }
     .top-header {
         &__shedule {
@@ -248,6 +282,32 @@
             }
             &:after {
                 border-left: none;
+            }
+        }
+    }
+    .catalog {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__title .title {
+            font-size: 21px;
+            &:after {
+                bottom: 5px;
+            }
+        }
+        &__cards {
+            display: block;
+        }
+        &__card {
+            width: 300px;
+            margin: 0 auto 20px 10px;
+        }
+        &__all {
+            font-size: 14px;
+        }
+        .card {
+            &__btn {
+                background: url("../img/catalog/card_cart.png") 85px 50% no-repeat,
+                    linear-gradient(180deg, #6d6aff 0, #504cff 100%);
             }
         }
     }

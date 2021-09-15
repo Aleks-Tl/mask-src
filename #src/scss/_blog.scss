@@ -1,0 +1,81 @@
+.blog {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    // .blog__title
+
+    &__title {
+        text-align: center;
+    }
+
+    // .blog__subtitle
+
+    &__subtitle {
+        margin-top: 23px;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #343434;
+    }
+
+    // .blog__swiper
+
+    &__swiper {
+        margin-top: 50px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+
+    // .blog__slide
+
+    &__slide {
+        width: 323px;
+        height: 204px;
+    }
+    iframe {
+        border-radius: 30px;
+    }
+}
+.container {
+}
+.title {
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+    top: 40%;
+    &:after {
+        content: "";
+        border: 9px solid #4956ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        left: -19px;
+    }
+}
+.swiper-button-next {
+    top: 40%;
+    &:after {
+        content: "";
+        border: 9px solid #4956ff;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        position: absolute;
+        right: -10px;
+    }
+}
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination-bullet-active {
+    background: #4945ff;
+}
