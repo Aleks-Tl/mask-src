@@ -57,15 +57,15 @@ var swiper = new Swiper(".blog__swiper", {
     breakpoints: {
         320: {
             slidesPerView: 1,
-            spaceBetween: 10,
+
         },
         576: {
-            slidesPerView: 2,
-            spaceBetween: 10,
+            slidesPerView: 2
+
         },
-        1800: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+        992: {
+            slidesPerView: 3
+
         },
     }
 });

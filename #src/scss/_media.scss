@@ -32,6 +32,11 @@
             margin-left: 20px;
         }
     }
+    .list {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 40px;
+    }
 }
 @media (max-width: 992px) {
     .top-header {
@@ -110,6 +115,31 @@
             justify-content: inherit;
         }
     }
+    .list {
+        .top-list {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__video {
+                margin: 0 auto;
+                video {
+                    width: 100%;
+                }
+            }
+        }
+        .bottom-list {
+            &__wrapper {
+                flex-direction: column;
+            }
+            &__video {
+                order: 1;
+                margin: 0 auto;
+                video {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 768px) {
     .top-header {
@@ -171,6 +201,14 @@
             &__btn {
                 background: url("../img/catalog/card_cart.png") 97px 50% no-repeat,
                     linear-gradient(180deg, #6d6aff 0, #504cff 100%);
+            }
+        }
+    }
+    .blog {
+        &__title .title {
+            font-size: 28px;
+            &:after {
+                bottom: 7px;
             }
         }
     }
@@ -308,6 +346,39 @@
             &__btn {
                 background: url("../img/catalog/card_cart.png") 85px 50% no-repeat,
                     linear-gradient(180deg, #6d6aff 0, #504cff 100%);
+            }
+        }
+    }
+    .blog {
+        padding: 40px 10px;
+        &__title .title {
+            font-size: 20px;
+            line-height: 25px;
+            &:after {
+                bottom: 5px;
+            }
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+    }
+    .blog {
+        &__slide {
+            video {
+                border-radius: 10px;
+            }
+        }
+    }
+    .list {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        .top-list,
+        .bottom-list {
+            &__video {
+                video {
+                    border-radius: 10px;
+                }
             }
         }
     }

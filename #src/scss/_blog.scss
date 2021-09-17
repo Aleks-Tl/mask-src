@@ -24,29 +24,21 @@
         padding-right: 20px;
         padding-left: 20px;
         padding-bottom: 50px;
+        justify-content: center;
     }
 
     // .blog__slide
 
     &__slide {
-        width: 323px;
-        height: 204px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        video {
+            border-radius: 30px;
+            max-width: 100%;
+        }
     }
-    iframe {
-        border-radius: 30px;
-    }
-}
-.container {
-}
-.title {
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
 }
 .swiper-button-prev {
     top: 40%;
