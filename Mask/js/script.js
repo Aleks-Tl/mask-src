@@ -69,3 +69,35 @@ var swiper = new Swiper(".blog__swiper", {
         },
     }
 });
+
+const letters = new Swiper('.letters__swiper', {
+    loop: true,
+    slidesPerView: 3,
+    spaceBetween: 10,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+        },
+        769: {
+            slidesPerView: 2
+
+        },
+        1100: {
+            slidesPerView: 3
+
+        },
+    }
+});

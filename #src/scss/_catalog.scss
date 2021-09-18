@@ -34,6 +34,7 @@
         color: #676767;
         transition: all 0.3s ease 0s;
         position: relative;
+        cursor: pointer;
         &:hover {
             background: linear-gradient(180deg, #6d6aff 0%, #4d49ff 100%);
             color: #fff;

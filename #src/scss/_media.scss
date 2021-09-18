@@ -37,6 +37,31 @@
         padding-right: 20px;
         padding-bottom: 40px;
     }
+    .opt {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &__descr {
+            max-width: 50%;
+        }
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__text {
+            margin-top: 20px;
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+        &__img {
+            width: 445px;
+            height: 372px;
+        }
+    }
+    .letters {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 @media (max-width: 992px) {
     .top-header {
@@ -140,6 +165,19 @@
             }
         }
     }
+    .opt {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__descr {
+            max-width: 100%;
+        }
+        &__img {
+            margin-top: 30px;
+        }
+    }
 }
 @media (max-width: 768px) {
     .top-header {
@@ -205,6 +243,22 @@
         }
     }
     .blog {
+        &__title .title {
+            font-size: 28px;
+            &:after {
+                bottom: 7px;
+            }
+        }
+    }
+    .opt {
+        &__title {
+            font-size: 28px;
+            &:after {
+                bottom: 7px;
+            }
+        }
+    }
+    .letters {
         &__title .title {
             font-size: 28px;
             &:after {
@@ -380,6 +434,43 @@
                     border-radius: 10px;
                 }
             }
+        }
+    }
+    .opt {
+        &__title {
+            font-size: 20px;
+            &:after {
+                bottom: 5px;
+            }
+        }
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__img {
+            max-width: 90%;
+            height: auto;
+        }
+    }
+    .letters {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &__slide {
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__title .title {
+            font-size: 18px;
+            &:after {
+                bottom: 5px;
+            }
+        }
+        &__subtitle {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        &__slider {
+            margin-top: 25px;
         }
     }
 }
