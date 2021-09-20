@@ -1,0 +1,129 @@
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ebebed;
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .footer__contacts
+
+    &__contacts {
+        flex-basis: 35%;
+    }
+
+    // .footer__title
+
+    .titleb {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #2b2a2a;
+        position: relative;
+        display: inline-block;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 4px;
+            z-index: 10;
+            left: 0px;
+            height: 4px;
+            width: 100%;
+            background-color: rgba(73, 69, 255, 0.3);
+        }
+    }
+
+    // .footer__address
+
+    &__address {
+        margin-top: 20px;
+        padding-left: 20px;
+        background: url("../img/footer_location.png") left 1px no-repeat;
+    }
+
+    // .footer__phone
+
+    &__phone {
+        margin-top: 20px;
+        background: url("../img/footer_phone.png") left 2px no-repeat;
+        padding-left: 20px;
+    }
+
+    // .footer__email
+
+    &__email {
+        margin-top: 20px;
+        background: url("../img/footer_mail.png") left 3px no-repeat;
+        padding-left: 20px;
+    }
+
+    // .footer__pays
+
+    &__pays {
+        margin-top: 30px;
+    }
+
+    // .footer__about
+
+    &__about {
+        flex-basis: 45%;
+    }
+
+    // .footer__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        color: #2b2a2a;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    // .footer__user
+
+    &__user {
+        padding-left: 20px;
+        background: url("../img/footer_user.png") left top no-repeat;
+    }
+
+    // .footer__img
+
+    &__img {
+        flex-basis: 10%;
+    }
+}
+
+.address-footer,
+.phone-footer,
+.email-footer,
+.user-footer {
+    // .address-footer__name
+
+    &__name {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+
+        color: #2b2a2a;
+    }
+
+    // .address-footer__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #676767;
+        margin-top: 10px;
+    }
+}
+.phone-footer {
+}
+.email-footer {
+}
+.user-footer {
+}
