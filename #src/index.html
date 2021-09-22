@@ -1,363 +1,246 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mask</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Play:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-
-    <header class="header">
-        <div class="header__top">
-            <div class="container top-header">
-                <a href="#" class="top-header__location">Москва</a>
-                <div class="top-header__contacts">
-                    <a href="tel:+79296228880" class="top-header__phone">+7 929 622 88 80</a>
-                    <div class="top-header__shedule">Пн-Вс с 10.00 до 20.00</div>
-                    <a href="mailto:mask@mail.com" class="top-header__mail">mask@mail.com</a>
-                    <div class="burger"><span></span></div>
+@@include('./header.html')
+<section class="promo">
+    <div class="container">
+        <div class="promo__wrapper">
+            <div class="promo__left left-promo">
+                <h1 class="left-promo__title title"><span>Сертифицированные</span><br>
+                    маски-респираторы
+                </h1>
+                <div class="left-promo__subtitle">В наличии с доставкой за 2 часа и оплатой
+                    по факту получения</div>
+                <div class="left-promo__items">
+                    <div class="left-promo__item">
+                        <div class="left-promo__img">
+                            <img src="img/promo_icon_1.png" alt="promo1">
+                        </div>
+                        <div class="left-promo__descr">
+                            <div class="left-promo__name">Самовывоз и отгрузки</div>
+                            <div class="left-promo__text">Обладая фирменным магазином, предоставляем возможность
+                                осуществить самовывоз.</div>
+                        </div>
+                    </div>
+                    <div class="left-promo__item">
+                        <div class="left-promo__img">
+                            <img src="img/promo_icon_2.png" alt="promo1">
+                        </div>
+                        <div class="left-promo__descr">
+                            <div class="left-promo__name">Лучшие цены, оптовые продажи</div>
+                            <div class="left-promo__text">Являемся прямым импортером
+                                и производителем.</div>
+                        </div>
+                    </div>
+                    <div class="left-promo__item">
+                        <div class="left-promo__img">
+                            <img src="img/promo_icon_3.png" alt="promo1">
+                        </div>
+                        <div class="left-promo__descr">
+                            <div class="left-promo__name">Оригинальная продукция</div>
+                            <div class="left-promo__text">Каждый респиратор имеет сертификат соответствия, что
+                                доказывает оригинальность продукции.</div>
+                        </div>
+                    </div>
+                    <div class="left-promo__item">
+                        <div class="left-promo__img">
+                            <img src="img/promo_icon_4.png" alt="promo1">
+                        </div>
+                        <div class="left-promo__descr">
+                            <div class="left-promo__name">Защита до 99%</div>
+                            <div class="left-promo__text">Респираторы применяются как при защите от COVID-19, так и
+                                в
+                                производственных и строительных целях.</div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="promo__commerc">Ознакомьтесь с нашим коммерческим предложением 3Маски КП</a>
+                <div class="promo__btns">
+                    <button class="promo__btn btn">Перейти в каталог</button>
+                    <a href="#" class="promo__videolink">Смотреть видео-презентацию</a>
+                </div>
+            </div>
+            <div class="promo__right right-promo">
+                <div class="right-promo__img">
+                    <img src="img/promo_img.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="header__bottom bottom-header">
-            <a href="#" class="bottom-header__logo"><img src="img/logo_header.png" alt="Logo"></a>
-            <nav class="bottom-header__nav">
-                <ul class="bottom-header__list">
-                    <li class="bottom-header__item"><a href="#" class="bottom-header__link">Каталог</a></li>
-                    <li class="bottom-header__item"><a href="#" class="bottom-header__link">Доставка</a></li>
-                    <li class="bottom-header__item"><a href="#" class="bottom-header__link">ОПТ</a></li>
-                    <li class="bottom-header__item"><a href="#" class="bottom-header__link">Контакты</a></li>
-                    <li class="bottom-header__item"><a href="#" class="bottom-header__link">Что защищает?</a></li>
-                </ul>
-            </nav>
-            <div class="bottom-header__cart">
-                <div class="bottom-header__basket">
-                    <span class="bottom-header__rur">0 &#8381</span>
-                    <span class="bottom-header__price">0</span>
-                </div>
-                <div class="bottom-header__heart">
-                    <span class="bottom-header__price">0</span>
-                </div>
-            </div>
-            <div class="bottom-header__btn btn">Заказать звонок</div>
+    </div>
+</section>
+
+<section class="catalog">
+    <div class="container">
+        <div class="catalog__title">
+            <h2 class="title">Каталог в наличии</h2>
         </div>
 
-
-    </header>
-
-    <section class="promo">
-        <div class="container">
-            <div class="promo__wrapper">
-                <div class="promo__left left-promo">
-                    <h1 class="left-promo__title title"><span>Сертифицированные</span><br>
-                        маски-респираторы
-                    </h1>
-                    <div class="left-promo__subtitle">В наличии с доставкой за 2 часа и оплатой
-                        по факту получения</div>
-                    <div class="left-promo__items">
-                        <div class="left-promo__item">
-                            <div class="left-promo__img">
-                                <img src="img/promo_icon_1.png" alt="promo1">
-                            </div>
-                            <div class="left-promo__descr">
-                                <div class="left-promo__name">Самовывоз и отгрузки</div>
-                                <div class="left-promo__text">Обладая фирменным магазином, предоставляем возможность
-                                    осуществить самовывоз.</div>
-                            </div>
-                        </div>
-                        <div class="left-promo__item">
-                            <div class="left-promo__img">
-                                <img src="img/promo_icon_2.png" alt="promo1">
-                            </div>
-                            <div class="left-promo__descr">
-                                <div class="left-promo__name">Лучшие цены, оптовые продажи</div>
-                                <div class="left-promo__text">Являемся прямым импортером
-                                    и производителем.</div>
-                            </div>
-                        </div>
-                        <div class="left-promo__item">
-                            <div class="left-promo__img">
-                                <img src="img/promo_icon_3.png" alt="promo1">
-                            </div>
-                            <div class="left-promo__descr">
-                                <div class="left-promo__name">Оригинальная продукция</div>
-                                <div class="left-promo__text">Каждый респиратор имеет сертификат соответствия, что
-                                    доказывает оригинальность продукции.</div>
-                            </div>
-                        </div>
-                        <div class="left-promo__item">
-                            <div class="left-promo__img">
-                                <img src="img/promo_icon_4.png" alt="promo1">
-                            </div>
-                            <div class="left-promo__descr">
-                                <div class="left-promo__name">Защита до 99%</div>
-                                <div class="left-promo__text">Респираторы применяются как при защите от COVID-19, так и
-                                    в
-                                    производственных и строительных целях.</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="promo__commerc">Ознакомьтесь с нашим коммерческим предложением 3Маски КП</a>
-                    <div class="promo__btns">
-                        <button class="promo__btn btn">Перейти в каталог</button>
-                        <a href="#" class="promo__videolink">Смотреть видео-презентацию</a>
-                    </div>
-                </div>
-                <div class="promo__right right-promo">
-                    <div class="right-promo__img">
-                        <img src="img/promo_img.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="catalog__tabs">
+            <ul class="catalog__list">
+                <li data-f="all" class="catalog__item catalog__link">Все товары</li>
+                <li data-f="rasp" class="text-rasp rasp catalog__item catalog__link">Распиратоы</li>
+                <li data-f="mask" class="text-mask mask catalog__item catalog__link">Маски</li>
+                <li data-f="shoes" class="text-shoes shoes catalog__item catalog__link">Обувь</li>
+                <li data-f="other" class="text-other other catalog__item catalog__link">Другое</li>
+            </ul>
         </div>
-    </section>
-
-    <section class="catalog">
-        <div class="container">
-            <div class="catalog__title">
-                <h2 class="title">Каталог в наличии</h2>
+        <div class="catalog__cards">
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_1.png" alt="card_1">
+                </div>
+                <div class="card__name">Респиратор (маска) KN95 FFP2
+                    без клапана</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_2.png" alt="card_1">
+                </div>
+                <div class="card__name">Респиратор (маска) KN95 FFP2</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_3.png" alt="card_1">
+                </div>
+                <div class="card__name">Респиратор (маска) KN95 Черный FFP2</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_4.png" alt="card_1">
+                </div>
+                <div class="card__name">Тапочки одноразовые спанбонд/прозрачные/черные</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_5.png" alt="card_1">
+                </div>
+                <div class="card__name">Тапочки Махровые Оптима Плюс, одноразовые</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_6.png" alt="card_1">
+                </div>
+                <div class="card__name">Антисептический гель Septel
+                    (50 мл.)</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_7.png" alt="card_1">
+                </div>
+                <div class="card__name">Экран защитный для лица
+                </div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_8.png" alt="card_1">
+                </div>
+                <div class="card__name">Sanitizer антисептический спрей (50 мл.)</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
+            </div>
+            <div class="catalog__card card">
+                <div class="card__img">
+                    <img src="img/catalog/card_9.png" alt="card_1">
+                </div>
+                <div class="card__name">Респиратор детский KN95 FFP2 Кitten blue</div>
+                <div class="card__price">
+                    <input type="radio" id="one" name="price" value="1">
+                    <label for="one">1 шт.70 руб.</label><br>
+                    <input type="radio" id="two" name="price" value="5">
+                    <label for="two">10 шт.750 руб.</label><br>
+                    <input type="radio" id="three" name="price" value="100">
+                    <label for="three">100 шт.7 000 руб.</label>
+                </div>
+                <button class="card__btn btn">В корзину</button>
             </div>
 
-            <div class="catalog__tabs">
-                <ul class="catalog__list">
-                    <li data-f="all" class="catalog__item catalog__link">Все товары</li>
-                    <li data-f="rasp" class="text-rasp rasp catalog__item catalog__link">Распиратоы</li>
-                    <li data-f="mask" class="text-mask mask catalog__item catalog__link">Маски</li>
-                    <li data-f="shoes" class="text-shoes shoes catalog__item catalog__link">Обувь</li>
-                    <li data-f="other" class="text-other other catalog__item catalog__link">Другое</li>
-                </ul>
-            </div>
-            <div class="catalog__cards">
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_1.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Респиратор (маска) KN95 FFP2
-                        без клапана</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_2.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Респиратор (маска) KN95 FFP2</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_3.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Респиратор (маска) KN95 Черный FFP2</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_4.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Тапочки одноразовые спанбонд/прозрачные/черные</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_5.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Тапочки Махровые Оптима Плюс, одноразовые</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_6.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Антисептический гель Septel
-                        (50 мл.)</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_7.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Экран защитный для лица
-                    </div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_8.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Sanitizer антисептический спрей (50 мл.)</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-                <div class="catalog__card card">
-                    <div class="card__img">
-                        <img src="img/catalog/card_9.png" alt="card_1">
-                    </div>
-                    <div class="card__name">Респиратор детский KN95 FFP2 Кitten blue</div>
-                    <div class="card__price">
-                        <input type="radio" id="one" name="price" value="1">
-                        <label for="one">1 шт.70 руб.</label><br>
-                        <input type="radio" id="two" name="price" value="5">
-                        <label for="two">10 шт.750 руб.</label><br>
-                        <input type="radio" id="three" name="price" value="100">
-                        <label for="three">100 шт.7 000 руб.</label>
-                    </div>
-                    <button class="card__btn btn">В корзину</button>
-                </div>
-
-            </div>
-            <div class="catalog__all_wrap">
-                <a href="#" class="catalog__all">Все товары</a>
-            </div>
         </div>
-    </section>
-
-    <section class="blog">
-        <div class="container">
-            <div class="blog__title">
-                <h2 class="title">Известные блогеры о нас</h2>
-            </div>
-            <div class="blog__subtitle">О нас говорят только хорошее</div>
-            <!-- Slider main container -->
-            <div class="swiper blog__swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide blog__slide">
-                        <div class="blog__slide">
-                            <video src="img/video/videoplayback_1.mp4" controls autoplay muted loop>
-                                Sorry, your browser doesn't support embedded videos,
-                                but don't worry, you can <a href="img/video/videoplayback_1.mp4">download it</a>
-                                and watch it with your favorite video player!
-                            </video>
-                        </div>
-                    </div>
-                    <div class="swiper-slide blog__slide">
-                        <div class="blog__slide">
-                            <video src="img/video/videoplayback_2.mp4" controls autoplay muted loop>
-                                Sorry, your browser doesn't support embedded videos,
-                                but don't worry, you can <a href="img/video/videoplayback_2.mp4">download it</a>
-                                and watch it with your favorite video player!
-                            </video>
-                        </div>
-                    </div>
-                    <div class="swiper-slide blog__slide">
-                        <div class="blog__slide">
-                            <video src="img/video/videoplayback_3.mp4" controls autoplay muted loop>
-                                Sorry, your browser doesn't support embedded videos,
-                                but don't worry, you can <a href="img/video/videoplayback_3.mp4">download it</a>
-                                and watch it with your favorite video player!
-                            </video>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
+        <div class="catalog__all_wrap">
+            <a href="#" class="catalog__all">Все товары</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="list">
-        <div class="container">
-            <div class="list__top top-list">
-                <div class="top-list__wrapper">
-                    <div class="top-list__descr">
-                        <div class="top-list__item">
-                            <div class="top-list__name">Защита от пыли и микробов</div>
-                            <p class="top-list__text">Складная 3-х панельная конструкция обеспечивает надежное
-                                прилегание респиратора 3М для различных типов и форм лица, маска приспосабливается к
-                                движениям лица и устойчива к смятию.</p>
-                        </div>
-                        <div class="top-list__item">
-                            <div class="top-list__name">Производство Великобритания (UK)</div>
-                            <p class="top-list__text">Продукция высочайшего качества от известного во всём мире бренда..
-                            </p>
-                        </div>
-                        <div class="top-list__item">
-                            <div class="top-list__name">FFP2 и FFP3</div>
-                            <p class="top-list__text">Наши респираторы обладают клапанами с наивысшими уровнями защиты.
-                                Очистка вдыхаемого воздуха до 99%.</p>
-                        </div>
-                    </div>
-                    <div class="top-list__video">
+<section class="blog">
+    <div class="container">
+        <div class="blog__title">
+            <h2 class="title">Известные блогеры о нас</h2>
+        </div>
+        <div class="blog__subtitle">О нас говорят только хорошее</div>
+        <!-- Slider main container -->
+        <div class="swiper blog__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide blog__slide">
+                    <div class="blog__slide">
                         <video src="img/video/videoplayback_1.mp4" controls autoplay muted loop>
                             Sorry, your browser doesn't support embedded videos,
                             but don't worry, you can <a href="img/video/videoplayback_1.mp4">download it</a>
@@ -365,232 +248,246 @@
                         </video>
                     </div>
                 </div>
-            </div>
-            <div class="list__bottom bottom-list">
-                <div class="bottom-list__wrapper">
-                    <div class="bottom-list__video">
+                <div class="swiper-slide blog__slide">
+                    <div class="blog__slide">
+                        <video src="img/video/videoplayback_2.mp4" controls autoplay muted loop>
+                            Sorry, your browser doesn't support embedded videos,
+                            but don't worry, you can <a href="img/video/videoplayback_2.mp4">download it</a>
+                            and watch it with your favorite video player!
+                        </video>
+                    </div>
+                </div>
+                <div class="swiper-slide blog__slide">
+                    <div class="blog__slide">
                         <video src="img/video/videoplayback_3.mp4" controls autoplay muted loop>
                             Sorry, your browser doesn't support embedded videos,
                             but don't worry, you can <a href="img/video/videoplayback_3.mp4">download it</a>
                             and watch it with your favorite video player!
                         </video>
                     </div>
-                    <div class="bottom-list__descr">
-                        <div class="bottom-list__item">
-                            <div class="bottom-list__name">Работа по договору</div>
-                            <p class="bottom-list__text">Заключаем договор поставки продукции в нуждающиеся учреждения.
-                            </p>
-                        </div>
-                        <div class="bottom-list__item">
-                            <div class="bottom-list__name">Всегда в наличии</div>
-                            <p class="bottom-list__text">ПСобственный склад гарантирует наличие продукции и самовывоз
-                                для наших клиентов.</p>
-                        </div>
-                        <div class="bottom-list__item">
-                            <div class="bottom-list__name">Организуем поставку</div>
-                            <p class="bottom-list__text">Вы можете оставить предварительный заказ на нужное наименование
-                                продукции и его количество, а мы организуем поставку.</p>
-                        </div>
-                    </div>
-
                 </div>
+
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="opt">
-        <div class="container">
-            <div class="opt__wrapper">
-                <div class="opt__descr">
-                    <h2 class="opt__title title">Крупный и мелкий опт</h2>
-                    <div class="opt__subtitle">Гарантия лучшей цены</div>
-                    <div class="opt__text">Ознакомьтесь с <a href="#" class="opt__link">Коммерческим предложением
-                            3МАСКИ</a>. Являемся прямым импортером.
-                        Предоставим лучшие цены по любому объему, а так же работаем с НДС и без НДС. Для согласования
-                        скидок обратитесь к нашим менеджерам
-
+<section class="list">
+    <div class="container">
+        <div class="list__top top-list">
+            <div class="top-list__wrapper">
+                <div class="top-list__descr">
+                    <div class="top-list__item">
+                        <div class="top-list__name">Защита от пыли и микробов</div>
+                        <p class="top-list__text">Складная 3-х панельная конструкция обеспечивает надежное
+                            прилегание респиратора 3М для различных типов и форм лица, маска приспосабливается к
+                            движениям лица и устойчива к смятию.</p>
                     </div>
-                    <button class="opt__btn btn">Заказать</button>
-                </div>
-                <div class="opt__img">
-                    <img src="img/opt_img.png" alt="opt_img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="letters">
-        <div class="container">
-            <div class="letters__title">
-                <h2 class="title">Благодарственные письма</h2>
-            </div>
-            <div class="letters__subtitle">О нас говорят только хорошее</div>
-            <div class="letters__slider">
-                <div class="swiper letters__swiper">
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="letters__slide">
-                                <img src="img/letters_img.jpg" alt="letters_img">
-                            </div>
-                        </div>
-
-
-
+                    <div class="top-list__item">
+                        <div class="top-list__name">Производство Великобритания (UK)</div>
+                        <p class="top-list__text">Продукция высочайшего качества от известного во всём мире бренда..
+                        </p>
                     </div>
-
-                    <div class="swiper-pagination"></div>
-
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
+                    <div class="top-list__item">
+                        <div class="top-list__name">FFP2 и FFP3</div>
+                        <p class="top-list__text">Наши респираторы обладают клапанами с наивысшими уровнями защиты.
+                            Очистка вдыхаемого воздуха до 99%.</p>
+                    </div>
+                </div>
+                <div class="top-list__video">
+                    <video src="img/video/videoplayback_1.mp4" controls autoplay muted loop>
+                        Sorry, your browser doesn't support embedded videos,
+                        but don't worry, you can <a href="img/video/videoplayback_1.mp4">download it</a>
+                        and watch it with your favorite video player!
+                    </video>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="list__bottom bottom-list">
+            <div class="bottom-list__wrapper">
+                <div class="bottom-list__video">
+                    <video src="img/video/videoplayback_3.mp4" controls autoplay muted loop>
+                        Sorry, your browser doesn't support embedded videos,
+                        but don't worry, you can <a href="img/video/videoplayback_3.mp4">download it</a>
+                        and watch it with your favorite video player!
+                    </video>
+                </div>
+                <div class="bottom-list__descr">
+                    <div class="bottom-list__item">
+                        <div class="bottom-list__name">Работа по договору</div>
+                        <p class="bottom-list__text">Заключаем договор поставки продукции в нуждающиеся учреждения.
+                        </p>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-list__name">Всегда в наличии</div>
+                        <p class="bottom-list__text">ПСобственный склад гарантирует наличие продукции и самовывоз
+                            для наших клиентов.</p>
+                    </div>
+                    <div class="bottom-list__item">
+                        <div class="bottom-list__name">Организуем поставку</div>
+                        <p class="bottom-list__text">Вы можете оставить предварительный заказ на нужное наименование
+                            продукции и его количество, а мы организуем поставку.</p>
+                    </div>
+                </div>
 
-    <section class="delivery">
-        <div class="container">
-            <div class="delivery__title">
-                <h2 class="title"><span>Бесконтактная доставка</span><br>
-                    с оплатой по факту</h2>
-            </div>
-            <div class="delivery__subtitle">Просто и удобно</div>
-            <div class="delivery__wrapper">
-                <div class="delivery__block">
-                    <div class="delivery__item">01</div>
-                    <div class="delivery__descr">
-                        <div class="delivery__name">Заказ через сайт или
-                            по телефону</div>
-                        <div class="delivery__text">Добавьте в корзину нужный вам товар или оформите заказ, позвонив на
-                            горячую линию</div>
-                    </div>
-                </div>
-                <div class="delivery__block">
-                    <div class="delivery__item">02</div>
-                    <div class="delivery__descr">
-                        <div class="delivery__name">Обработка заказа</div>
-                        <div class="delivery__text">Менеджер обрабатывает заявку в течение 5 минут, для подтверждения
-                            заказа связывается с вами и уточняет точное количество, сроки и адрес поставки</div>
-                    </div>
-                </div>
-                <div class="delivery__block">
-                    <div class="delivery__item">03</div>
-                    <div class="delivery__descr">
-                        <div class="delivery__name">Стоимость доставки курьером в пределах МКАД — 350р.</div>
-                        <div class="delivery__text">Доставка в день заказа по Москве и области, отправляем ТП СДЭК в
-                            течении 30 минут вы получаете ТРЕК-НОМЕР отслеживания.</div>
-                    </div>
-                </div>
-                <div class="delivery__block">
-                    <div class="delivery__item">04</div>
-                    <div class="delivery__descr">
-                        <div class="delivery__name">Получение и оплата</div>
-                        <div class="delivery__text">Курьер привозит заказ в индивидуально запакованном курьерском
-                            пакете.</div>
-                    </div>
-                </div>
-                <div class="delivery__divider"></div>
-            </div>
-            <button class="delivery__btn btn">Заказать</button>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__contacts">
-                    <div class="footer__title titleb titleb_fix">КОНТАКТЫ</div>
-                    <div class="footer__address address-footer">
-                        <div class="address-footer__name">Наш адрес</div>
-                        <div class="address-footer__text">Московская обл., Мытищи, Шараповский пр-д, 7 Санкт-Петербург,
-                            ул.Федора Абрамова, д.18</div>
-                    </div>
-                    <div class="footer__phone phone-footer">
-                        <div class="phone-footer__name">Наш телефон</div>
-                        <a href="tel:84993227655" class="phone-footer__text">8 (499) 322-76-55</a>
-                    </div>
-                    <div class="footer__email email-footer">
-                        <div class="email-footer__name">Наша почта</div>
-                        <a href="mailto:info@3maski.ru" class="email-footer__text">info@3maski.ru</a>
-                    </div>
-                    <div class="footer__pays">
-                        <a href="#"><img src="img/footer_pay.png" alt="pays"></a>
-                    </div>
-                </div>
-                <div class="footer__about">
-                    <div class="footer__title titleb">О МАГАЗИНЕ</div>
-                    <div class="footer__text">Специализированный магазин сертифицированных, оригинальных защитных
-                        материалов для органов дыхания и защиты от вируса COVID-19
-
-                    </div>
-                    <div class="footer__user user-footer">
-                        <div class="user-footer__name">ИП Седов Алексей Александрович</div>
-                        <div class="user-footer__text">Для документов: 141018, Московская обл., г. Мытищи, ул. Лётная,
-                            21/2, кв. 237 (только простыми письмами)
-                            Свидетельство о гос. регистрации 37003766773
-                            ИНН 344692125024
-                            ОГРНИП 312346007200046</div>
-                    </div>
-                </div>
-                <div class="footer__img">
-                    <img src="img/footer_best.jpg" alt="footer_best">
-                </div>
             </div>
         </div>
-    </footer>
 
-    <div class="overlay"></div>
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="js/script.min.js"></script>
+    </div>
+</section>
+
+<section class="opt">
+    <div class="container">
+        <div class="opt__wrapper">
+            <div class="opt__descr">
+                <h2 class="opt__title title">Крупный и мелкий опт</h2>
+                <div class="opt__subtitle">Гарантия лучшей цены</div>
+                <div class="opt__text">Ознакомьтесь с <a href="#" class="opt__link">Коммерческим предложением
+                        3МАСКИ</a>. Являемся прямым импортером.
+                    Предоставим лучшие цены по любому объему, а так же работаем с НДС и без НДС. Для согласования
+                    скидок обратитесь к нашим менеджерам
+
+                </div>
+                <button class="opt__btn btn">Заказать</button>
+            </div>
+            <div class="opt__img">
+                <img src="img/opt_img.png" alt="opt_img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="letters">
+    <div class="container">
+        <div class="letters__title">
+            <h2 class="title">Благодарственные письма</h2>
+        </div>
+        <div class="letters__subtitle">О нас говорят только хорошее</div>
+        <div class="letters__slider">
+            <div class="swiper letters__swiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="letters__slide">
+                            <img src="img/letters_img.jpg" alt="letters_img">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="delivery">
+    <div class="container">
+        <div class="delivery__title">
+            <h2 class="title"><span>Бесконтактная доставка</span><br>
+                с оплатой по факту</h2>
+        </div>
+        <div class="delivery__subtitle">Просто и удобно</div>
+        <div class="delivery__wrapper">
+            <div class="delivery__block">
+                <div class="delivery__item">01</div>
+                <div class="delivery__descr">
+                    <div class="delivery__name">Заказ через сайт или
+                        по телефону</div>
+                    <div class="delivery__text">Добавьте в корзину нужный вам товар или оформите заказ, позвонив на
+                        горячую линию</div>
+                </div>
+            </div>
+            <div class="delivery__block">
+                <div class="delivery__item">02</div>
+                <div class="delivery__descr">
+                    <div class="delivery__name">Обработка заказа</div>
+                    <div class="delivery__text">Менеджер обрабатывает заявку в течение 5 минут, для подтверждения
+                        заказа связывается с вами и уточняет точное количество, сроки и адрес поставки</div>
+                </div>
+            </div>
+            <div class="delivery__block">
+                <div class="delivery__item">03</div>
+                <div class="delivery__descr">
+                    <div class="delivery__name">Стоимость доставки курьером в пределах МКАД — 350р.</div>
+                    <div class="delivery__text">Доставка в день заказа по Москве и области, отправляем ТП СДЭК в
+                        течении 30 минут вы получаете ТРЕК-НОМЕР отслеживания.</div>
+                </div>
+            </div>
+            <div class="delivery__block">
+                <div class="delivery__item">04</div>
+                <div class="delivery__descr">
+                    <div class="delivery__name">Получение и оплата</div>
+                    <div class="delivery__text">Курьер привозит заказ в индивидуально запакованном курьерском
+                        пакете.</div>
+                </div>
+            </div>
+            <div class="delivery__divider"></div>
+        </div>
+        <button class="delivery__btn btn">Заказать</button>
+    </div>
+</section>
+
+@@include('./footer.html')
+
 </body>
-
-</html>
