@@ -95,6 +95,10 @@
             margin-right: 20px;
         }
     }
+    .help {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 @media (max-width: 992px) {
     .top-header {
@@ -291,10 +295,28 @@
     }
     .prot-infec {
         &__wrap {
-            display: block;
+            flex-direction: column;
+            text-align: center;
         }
         &__img {
             margin-bottom: 30px;
+        }
+    }
+    .help {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__video {
+            order: -1;
+            margin-bottom: 25px;
+        }
+        &__subtitle {
+            &:before {
+                width: 0;
+            }
+        }
+        &__descr {
+            text-align: center;
         }
     }
 }
@@ -522,6 +544,21 @@
         &__subtitle.title {
             font-size: 27px;
             line-height: 32px;
+        }
+    }
+    .help {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__subtitle {
+            font-size: 22px;
+            line-height: 26px;
+        }
+        &__tetx {
+            font-size: 13px;
         }
     }
 }
@@ -922,12 +959,17 @@
         }
     }
     .prot-infec {
+        padding-left: 10px;
+        padding-right: 10px;
         &__title {
             font-size: 25px;
         }
         &__subtitle.title {
             font-size: 22px;
             line-height: 29px;
+            &:after {
+                bottom: 5px;
+            }
         }
         &__tetx {
             margin-top: 20px;
@@ -935,6 +977,30 @@
         }
         &__inform {
             font-size: 12px;
+        }
+    }
+    .help {
+        padding-right: 10px;
+        padding-left: 10px;
+        &__title {
+            font-size: 22px;
+            &:after {
+                bottom: 5px;
+            }
+        }
+        &__subtitle {
+            font-size: 17px;
+            line-height: 22px;
+            margin-top: 10px;
+        }
+        &__video {
+            width: 90%;
+            height: auto;
+
+            video {
+                max-width: 100%;
+                border-radius: 20px;
+            }
         }
     }
 }

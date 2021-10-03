@@ -12,6 +12,9 @@
         align-items: center;
     }
     &__img {
+        img {
+            border-radius: 45px 0;
+        }
     }
 
     // .prot-infec__descr
