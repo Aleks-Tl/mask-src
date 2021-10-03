@@ -1,0 +1,85 @@
+.federal {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f7f7f8;
+    // .federal__name
+
+    &__name {
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 50px;
+        text-align: center;
+        text-transform: capitalize;
+        color: #2b2a2a;
+    }
+
+    // .federal__title
+    &__wrap {
+        text-align: center;
+    }
+    &__title {
+        font-size: 30px !important;
+        z-index: 0;
+        //text-align: center;
+        //text-transform: capitalize;
+        //color: #2b2a2a;
+    }
+
+    // .federal__subtitle
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        color: #343434;
+        max-width: 635px;
+        margin: 25px auto 50px auto;
+    }
+
+    // .federal__list
+
+    &__list {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, 30%);
+        column-gap: 30px;
+        justify-content: space-between;
+    }
+
+    // .federal__item
+
+    &__item {
+        padding: 30px 30px 30px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 40px 0px;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    // .federal__img
+
+    &__img {
+        margin-bottom: 15px;
+    }
+
+    // .federal__names
+
+    &__names {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    // .federal__text
+
+    &__text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #676767;
+        margin-top: 15px;
+    }
+}

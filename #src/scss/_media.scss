@@ -73,6 +73,28 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .optt {
+        padding-left: 20px;
+        padding-right: 20px;
+        &__mask {
+            display: none;
+        }
+    }
+    .federal {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .prot-promo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .prot-infec {
+        padding-right: 20px;
+        padding-left: 20px;
+        &__img {
+            margin-right: 20px;
+        }
+    }
 }
 @media (max-width: 992px) {
     .top-header {
@@ -213,7 +235,66 @@
             }
         }
         &__descr {
-            height: 200px;
+            height: 220px;
+        }
+    }
+    .optt {
+        &__opt {
+            font-size: 30px;
+            line-height: 36px;
+        }
+        &__title {
+            font-size: 27px;
+            line-height: 35px;
+            &.title {
+                max-width: 300px !important;
+            }
+            &:after {
+                bottom: 7px;
+            }
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+    }
+    .form {
+        padding-left: 20px;
+        padding-right: 20px;
+        .input-promo {
+            width: auto;
+        }
+        .feed-back {
+            gap: 15px;
+        }
+    }
+    .discount {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .prot-promo {
+        &__rightpart {
+            display: none;
+        }
+        &__title {
+            font-size: 35px;
+        }
+        &__subtitle.title {
+            font-size: 30px;
+            &:after {
+                bottom: 7px;
+            }
+        }
+    }
+    .prot-infec {
+        &__wrap {
+            display: block;
+        }
+        &__img {
+            margin-bottom: 30px;
         }
     }
 }
@@ -348,6 +429,99 @@
                 font-size: 13px;
                 line-height: 19px;
             }
+        }
+    }
+    .optt {
+        &__wrapper {
+            display: block;
+            text-align: center;
+        }
+        &__title {
+            &.title {
+                margin: 0 auto;
+                max-width: 350px !important;
+            }
+            &:after {
+                bottom: 7px;
+            }
+        }
+        &__btn {
+            margin: 30px auto;
+        }
+    }
+    .federal {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__name {
+            font-size: 28px;
+        }
+        &__title {
+            font-size: 25px !important;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            margin-bottom: 30px;
+        }
+    }
+    .form {
+        &__title .title {
+            font-size: 30px;
+            &:after {
+                bottom: 7px;
+            }
+        }
+        &__subtitle {
+            margin-top: 15px;
+        }
+    }
+    .discount {
+        .card__btn {
+            background: url("../img/catalog/card_cart.png") 97px 50% no-repeat,
+                linear-gradient(180deg, #6d6aff 0%, #504cff 100%);
+            background-size: 18px !important;
+        }
+    }
+    .prot-promo {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle.title {
+            font-size: 27px;
+            line-height: 32px;
+        }
+        &__stat {
+            font-size: 18px;
+        }
+        &__statits {
+            margin-top: 25px;
+            font-size: 25px;
+            line-height: 30px;
+            span {
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+    .prot-infec {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__img {
+            text-align: center;
+        }
+        &__title {
+            font-size: 30px;
+            line-height: 35px;
+        }
+        &__subtitle.title {
+            font-size: 27px;
+            line-height: 32px;
         }
     }
 }
@@ -629,6 +803,138 @@
             &_air {
                 background: none !important;
             }
+        }
+    }
+    .optt {
+        &__opt {
+            font-size: 25px;
+        }
+        &__title {
+            font-size: 23px;
+        }
+        &__subtitle {
+            margin-top: 15px;
+            font-size: 16px;
+        }
+    }
+    .federal {
+        &__name {
+            font-size: 25px;
+            line-height: 32px;
+        }
+        &__title {
+            font-size: 16px !important;
+            &:after {
+                bottom: 3px;
+                left: 0;
+            }
+        }
+        &__subtitle {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+    .form {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__title .title {
+            font-size: 25px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+        .feed-back {
+            display: block;
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 15px;
+                &::placeholder {
+                    font-size: 13px;
+                }
+            }
+            textarea {
+                padding-top: 15px;
+                padding-bottom: 25px;
+            }
+            .file-inp__wrap {
+                input {
+                    padding-top: 10px !important;
+                    &::placeholder {
+                        font-size: 15px !important;
+                    }
+                }
+                span {
+                    bottom: 25px;
+                    font-size: 13px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .input-file {
+                &::placeholder {
+                    font-size: 13px;
+                }
+            }
+        }
+        &__submit {
+            display: block;
+            .submit-btn {
+                width: 50% !important;
+                margin: 0 auto;
+                padding: 12px 0 !important;
+            }
+        }
+    }
+    .discount {
+        padding: 40px 0;
+        .catalog__card {
+            margin: 0 auto 20px auto;
+        }
+        .card__btn {
+            background: url("../img/catalog/card_cart.png") 86px 50% no-repeat,
+                linear-gradient(180deg, #6d6aff 0%, #504cff 100%);
+            background-size: 17px !important;
+        }
+    }
+    .prot-promo {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        &__statits {
+            display: block;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__subtitle.title {
+            font-size: 22px;
+        }
+        &__stat {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        &__statits-item {
+            margin-bottom: 15px;
+        }
+        &__btn {
+            margin-top: 25px;
+        }
+    }
+    .prot-infec {
+        &__title {
+            font-size: 25px;
+        }
+        &__subtitle.title {
+            font-size: 22px;
+            line-height: 29px;
+        }
+        &__tetx {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        &__inform {
+            font-size: 12px;
         }
     }
 }

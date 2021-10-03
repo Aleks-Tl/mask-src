@@ -1,0 +1,80 @@
+.prot-promo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    // .prot-promo__leftpart
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__leftpart {
+        margin-right: 19px;
+    }
+
+    // .prot-promo__title
+
+    &__title {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        text-transform: capitalize;
+        color: #2b2a2a;
+        margin-bottom: 10px;
+    }
+
+    // .prot-promo__subtitle
+
+    &__subtitle {
+    }
+
+    // .prot-promo__stat
+
+    &__stat {
+        font-size: 20px;
+        line-height: 30px;
+        color: #343434;
+        margin-top: 30px;
+    }
+
+    // .prot-promo__statits
+
+    &__statits {
+        margin-top: 35px;
+        display: flex;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2b2a2a;
+
+        span {
+            font-size: 16px;
+            line-height: 22px;
+            color: #676767;
+        }
+    }
+
+    // .prot-promo__statits-item
+
+    &__statits-item {
+        margin-right: 50px;
+        padding-left: 35px;
+        background: url("../img/prot-checkbox.png") left 5px no-repeat;
+    }
+
+    // .prot-promo__btn
+
+    &__btn {
+        margin-top: 40px;
+        display: inline-block;
+    }
+
+    // .prot-promo__rightpart
+
+    &__rightpart {
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}

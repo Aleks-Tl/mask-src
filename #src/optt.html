@@ -1,0 +1,99 @@
+@@include('./header.html')
+
+<section class="optt">
+    <div class="container">
+        <div class="optt__wrapper">
+            <div class="optt__descr">
+                <h2 class="optt__opt">Респираторы оптом</h2>
+                <h3 class="optt__title title">со скидкой до 50%</h3>
+                <div class="optt__subtitle">И доставкой в день заказа.</div>
+                <a href="catalog.html" class="optt__btn btn">Перейти в каталог</a>
+                <img src="img/mask-opt.png" alt="Mask" class="optt__mask">
+            </div>
+            <div class="optt__img">
+                <img src="img/opt_img.png" alt="opt-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="federal">
+    <div class="container">
+        <h2 class="federal__name">Соответствие Федеральному </h2>
+        <div class="federal__wrap">
+            <h3 class="federal__title title">закону от 01.04.2020 №98-ФЗ</h3>
+        </div>
+        <div class="federal__subtitle">Специализированные защитные респираторы для защиты дыхательных путей</div>
+        <div class="federal__list">
+            <div class="federal__item">
+                <div class="federal__img">
+                    <img src="img/opt_page_house.png" alt="house">
+                </div>
+                <div class="federal__names">Всегда в наличии</div>
+                <div class="federal__text">Собственный склад гарантирует наличие продукции и самовывоз для наших
+                    клиентов</div>
+            </div>
+
+            <div class="federal__item">
+                <div class="federal__img">
+                    <img src="img/opt_page_cards.png" alt="house">
+                </div>
+                <div class="federal__names">Оплата по безналичному расчету</div>
+                <div class="federal__text">Весь заказанный товар вы оплачиваете через банк и получаете товарную
+                    накладную ТОРГ 12</div>
+            </div>
+
+            <div class="federal__item">
+                <div class="federal__img">
+                    <img src="img/opt_page_mask.png" alt="house">
+                </div>
+                <div class="federal__names">Оригинальная продукция</div>
+                <div class="federal__text">Каждый товар имеет сертификат соответствия</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form">
+    <div class="container">
+        <div class="form__title">
+            <div class="title">Заполните форму</div>
+        </div>
+        <div class="form__subtitle">Для оптового и мелкооптового заказа или оформите заказ через корзину.
+            Возможны поставки как поштучно, так и партиями с индивидуальными
+            скидками от объёма.</div>
+        <form action="#" class="feed-back">
+            <input type="text" name="name" placeholder="Ваше имя" class="input-name">
+            <input type="email" name="email" placeholder="Электронная почта" class="input-email">
+            <input type="phone" name="tel" placeholder="Ваш телефон" class="input-tel">
+            <input type="text" name="address" placeholder="Адрес доставки" class="input-address">
+            <textarea name="text" class="textarea"
+                placeholder="Перечислите модели масок и интересующее количество. Например: 8122 — 300 шт."></textarea>
+            <div class="file-inp">
+                <p>Прикрепите файл с реквизитами вашей компании</p>
+                <div class="file-inp__wrap">
+                    <input type="text" name="file" class="input-file" placeholder="Перетащите файл сюда">
+                    <span>Или загрузите вручную</span>
+                </div>
+
+            </div>
+            <div class="form__submit">
+                <input type="text" name="promo" class="input-promo" placeholder="Ваш промокод">
+                <input type="submit" name="submit" class="submit-btn">
+            </div>
+        </form>
+    </div>
+
+</section>
+
+<section class="discount">
+    <div class="container">
+        <h2 class="federal__name">Скидка до 50%</h2>
+        <div class="federal__wrap">
+            <h3 class="federal__title title">при оптовой закупке</h3>
+        </div>
+        @@include('catalog.html')
+    </div>
+</section>
+
+@@include('./footer.html')
