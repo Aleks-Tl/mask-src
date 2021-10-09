@@ -7,8 +7,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &_two {
+            margin-top: 50px;
+        }
     }
-
+    &__wpartit {
+        text-align: center;
+    }
     // .help__descr
 
     &__descr {
@@ -41,6 +46,19 @@
             background: $main-color;
             border-radius: 100%;
         }
+        &_med {
+            padding-left: 0;
+            font-weight: bold;
+            font-size: 34px;
+            line-height: 40px;
+            text-transform: capitalize;
+            color: #2b2a2a;
+
+            &:before {
+                width: 0;
+                height: 0;
+            }
+        }
     }
 
     // .help__tetx
@@ -51,6 +69,15 @@
         letter-spacing: 0.02em;
         color: #676767;
         margin-top: 10px;
+        p {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        span {
+            font-weight: bold;
+        }
     }
 
     // .help__inform

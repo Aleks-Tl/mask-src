@@ -1,6 +1,5 @@
 .header {
     // .header__top
-
     &__top {
         background-color: #eff0f1;
     }
@@ -181,7 +180,7 @@
             content: "";
             position: absolute;
             left: 0;
-            bottom: -155%;
+            bottom: -165%;
             width: 0%;
             height: 2px;
             background-color: $main-color;

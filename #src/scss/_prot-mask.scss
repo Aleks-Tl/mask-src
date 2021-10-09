@@ -1,0 +1,63 @@
+.prot-mask {
+    padding-bottom: 50px;
+
+    // .prot-mask__wrap
+
+    &__wrap {
+        padding-top: 50px;
+        border-top: 1px solid #e5e5e7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .prot-mask__img
+
+    &__img {
+        margin-right: 30px;
+        img {
+            max-width: 445px;
+        }
+    }
+
+    // .prot-mask__descr
+
+    &__descr {
+        width: 100%;
+    }
+
+    // .prot-mask__name
+
+    &__name {
+    }
+
+    // .prot-mask__subtitle
+
+    &__subtitle {
+    }
+
+    // .prot-mask__card
+
+    &__card {
+    }
+}
+
+.card-prot-mask {
+    display: flex;
+    // .card-prot-mask__img
+
+    &__img {
+    }
+}
+.card {
+    display: block;
+    // .card__price
+
+    &__price {
+    }
+
+    // .card__btn
+
+    &__btn {
+    }
+}
