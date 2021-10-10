@@ -214,7 +214,6 @@ h6 {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 100;
 }
 
 .bottom-header__item {
@@ -1813,6 +1812,85 @@ h6 {
   text-align: center;
 }
 
+.fade-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 350px;
+  height: 340px;
+  z-index: 101 !important;
+  box-shadow: 0px 4px 20px rgba(73, 69, 255, 0.2);
+  border-radius: 40px 0px;
+}
+
+.fade-block p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #2b2a2a;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-window {
+  padding: 30px;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.card-header {
+  position: relative;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2b2a2a;
+}
+
+.card-header:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  z-index: -1;
+  left: 5px;
+  height: 7px;
+  width: 100%;
+  background-color: rgba(73, 69, 255, 0.3);
+}
+
+.modal-form {
+  margin-top: 25px;
+}
+
+.modal-form input {
+  width: 100%;
+  padding: 18px 46px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.modal-form input[type="text"] {
+  background: #f7f7f8 url("../img/modal-form-phone.png") 20px 18px no-repeat;
+  position: relative;
+}
+
+.modal-form input[type="phone"] {
+  background: #f7f7f8 url("../img/phone-form-modal.png") 20px 18px no-repeat;
+  position: relative;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
 body {
   min-width: 320px;
   font-size: 16px;
@@ -1820,6 +1898,11 @@ body {
   font-size: 14px;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+body.lock {
+  overflow: hidden;
+  height: auto;
 }
 
 img {
@@ -2031,6 +2114,7 @@ img {
     width: 50%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease 0s;
+    z-index: 100;
   }
 
   .bottom-header__list.active {
@@ -2680,7 +2764,7 @@ img {
 
   .catalog__card {
     width: 300px;
-    margin: 0 auto 20px 10px;
+    margin: 0 auto 20px auto;
   }
 
   .catalog__all {
@@ -3070,6 +3154,15 @@ img {
   .why__item {
     flex-basis: 100%;
   }
+
+  .fade-block {
+    width: 300px;
+    height: auto;
+  }
+
+  .modal-window {
+    padding: 20px 10px;
+  }
 }
 
 .webp .top-header__location{ background: url(../img/icons/header_location.webp) left top no-repeat; }
@@ -3127,6 +3220,10 @@ img {
 .webp .item-why__title_plot{ background: url(../img/why-img-02.webp) left center no-repeat; }
 
 .webp .item-why__title_kond{ background: url(../img/why-img-03.webp) left center no-repeat; }
+
+.webp .modal-form input[type="text"]{ background: #f7f7f8 url(../img/modal-form-phone.webp) 20px 18px no-repeat; }
+
+.webp .modal-form input[type="phone"]{ background: #f7f7f8 url(../img/phone-form-modal.webp) 20px 18px no-repeat; }
 
 @media (max-width: 768px){
 

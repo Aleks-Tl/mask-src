@@ -21,7 +21,12 @@ window.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger'),
         overlay = document.querySelector('.overlay'),
         menu = document.querySelector('.bottom-header__list'),
-        menuLink = document.querySelectorAll('.bottom-header__link');
+        menuLink = document.querySelectorAll('.bottom-header__link'),
+        btnsModal = document.querySelectorAll('[data-modal-button]'),
+        modal = document.querySelector('[data-modal]'),
+        btnsClose = document.querySelectorAll('[data-modal-close]'),
+        body = document.querySelector('body');
+
 
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
@@ -32,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         burger.classList.remove('active');
         overlay.classList.remove('active');
         menu.classList.remove('active');
+        body.classList.remove('lock');
     });
     menuLink.forEach((item) => {
         item.addEventListener('click', () => {
@@ -40,6 +46,27 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('active');
         })
     })
+
+    btnsModal.forEach(function (btn) {
+        btn.addEventListener('click', () => {
+            overlay.classList.add('active');
+            modal.classList.remove('hidden');
+            body.classList.add('lock');
+        })
+    })
+
+    btnsClose.forEach(btn => {
+        btn.addEventListener('click', () => {
+            overlay.classList.remove('active');
+            modal.classList.add('hidden');
+            body.classList.remove('lock');
+        })
+    });
+
+    modal.addEventListener('click', (e) => {
+        e.stopPropagation();
+    })
+
 });
 
 var swiper = new Swiper(".blog__swiper", {
