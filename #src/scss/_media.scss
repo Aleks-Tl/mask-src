@@ -588,6 +588,12 @@
             flex-basis: 40%;
         }
     }
+    .pageUp {
+        bottom: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
 }
 @media (max-width: 576px) {
     .container {
@@ -1062,5 +1068,11 @@
     }
     .modal-window {
         padding: 20px 10px;
+    }
+    .pageUp {
+        bottom: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
     }
 }

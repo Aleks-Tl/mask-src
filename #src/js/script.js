@@ -25,7 +25,9 @@ window.addEventListener('DOMContentLoaded', () => {
         btnsModal = document.querySelectorAll('[data-modal-button]'),
         modal = document.querySelector('[data-modal]'),
         btnsClose = document.querySelectorAll('[data-modal-close]'),
-        body = document.querySelector('body');
+        body = document.querySelector('body'),
+        pageUp = document.querySelector('.pageUp');
+
 
 
     burger.addEventListener('click', () => {
@@ -66,6 +68,15 @@ window.addEventListener('DOMContentLoaded', () => {
     modal.addEventListener('click', (e) => {
         e.stopPropagation();
     })
+
+    window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if (scroll > 800) {
+            pageUp.classList.add('active');
+        } else {
+            pageUp.classList.remove('active');
+        }
+    });
 
 });
 

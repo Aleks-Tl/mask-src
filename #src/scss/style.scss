@@ -26,6 +26,10 @@
 
 @import "media";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-width: 320px;
     font-size: 16px;
@@ -96,5 +100,23 @@ img {
         height: 10px;
         width: 100%;
         background-color: rgba(73, 69, 255, 0.3);
+    }
+}
+
+.pageUp {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease 0s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+    img {
+        width: 100%;
     }
 }

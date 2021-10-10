@@ -1060,6 +1060,7 @@ h6 {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #ebebed;
+  position: relative;
 }
 
 .footer__wrapper {
@@ -1891,6 +1892,10 @@ h6 {
   margin-top: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 320px;
   font-size: 16px;
@@ -1968,6 +1973,26 @@ img {
   height: 10px;
   width: 100%;
   background-color: rgba(73, 69, 255, 0.3);
+}
+
+.pageUp {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.pageUp.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pageUp img {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
@@ -2614,6 +2639,13 @@ img {
   .why__item {
     flex-basis: 40%;
   }
+
+  .pageUp {
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -3162,6 +3194,13 @@ img {
 
   .modal-window {
     padding: 20px 10px;
+  }
+
+  .pageUp {
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
   }
 }
 
